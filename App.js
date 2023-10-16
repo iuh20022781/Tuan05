@@ -10,11 +10,13 @@ function App() {
   return (
     <NavigationContainer >
       <Stack.Navigator initialRouteName='Home'>
-        <Stack.Screen name="Screen1" Screen={Screen1}></Stack.Screen>
-        <Stack.Screen name="Screen2" Screen={Screen2}></Stack.Screen>
+        <Stack.Screen name="Screen1" component={Screen1}></Stack.Screen>
+        <Stack.Screen name="Screen2" component={Screen2}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
 
   );
+
+
 };
 export default App;

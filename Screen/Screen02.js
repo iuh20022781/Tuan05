@@ -1,8 +1,16 @@
 
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Image, TouchableOpacity, Pressable} from "react-native";
+import {
+    StyleSheet,
+    Text,
+    View,
+    Image,
+    TouchableOpacity,
+    Pressable
 
-function Screen02({ navigation }) {
+} from "react-native";
+
+function screen02({ navigation }) {
     const [image, setImage] = useState(require('../assets/vs_red.png'))
 
     const [txtColor, setTxtColor] = useState("đỏ")
@@ -74,7 +82,7 @@ function Screen02({ navigation }) {
 
                 </Pressable>
 
-                <TouchableOpacity style={styles.bn2} onPress={() => { navigation.navigate('Screen01',{"img":image} ); }}>
+                <TouchableOpacity style={styles.bn2} onPress={() => { navigation.navigate('Screen1',{"img":image} ); }}>
                     <Text style={styles.txtBnt2}>XONG</Text>
                 </TouchableOpacity>
             </View>
@@ -142,4 +150,4 @@ const styles = StyleSheet.create({
         lineHeight: 'normal',
     },
 });
-export default Screen02;
+export default screen02;

@@ -1,8 +1,16 @@
 
 import React, { useState ,useEffect} from "react";
-import {StyleSheet,Text,View,Image,TouchableOpacity} from "react-native";
 
-function Screen01({route,navigation}) {
+import {
+    StyleSheet,
+    Text,
+    View,
+    Image,
+    TouchableOpacity
+
+} from "react-native";
+
+function screen01({route,navigation}) {
     console.log(route)
     var [image,setImage] = useState();
     
@@ -191,4 +199,4 @@ const styles = StyleSheet.create({
     },
 
 });
-export default Screen01;
+export default screen01;
